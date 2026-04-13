@@ -1,4 +1,30 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+# Met Museum Landing
+
+Simple responsive landing page inspired by the Metropolitan Museum of Art.
+
+## 🔗 Demo
+
+https://github.com/maximtsyrulnyk/landing_page_final_review.git
+
+## 🛠️ Tech Stack
+
+* HTML
+* SCSS
+
+## 📱 Features
+
+* Responsive layout
+* Clean semantic markup
+
+## 🚀 Run locally
+
+```bash
+git clone https://github.com/maximtsyrulnyk/landing_page_final_review.git
+cd met-museum-landing
+npm install
+npm start
+```
+
+## 👤 Author
+
+https://github.com/maximtsyrulnyk
