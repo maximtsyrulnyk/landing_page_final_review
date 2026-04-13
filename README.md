@@ -9,7 +9,15 @@ https://github.com/maximtsyrulnyk/landing_page_final_review.git
 ## 🛠️ Tech Stack
 
 * HTML
-* SCSS
+* CSS
+* JavaScript
+* Git&GitHub
+* React
+* TypeScript
+* React with Type Script
+* Redux
+* SQL Basics
+* Node.js
 
 ## 📱 Features
 
