@@ -1,73 +1,76 @@
-# Landing Page - Final Review
+Landing Page — Final Review
+This is a responsive landing page project developed with a focus on clean architecture, semantic markup, and modern automation tools. The project demonstrates proficiency in the BEM methodology, Sass preprocessing, and Gulp-based workflow.
 
-This is an adaptive landing page (Landing Page), developed as part of the final stage of training. The project demonstrates mock-up layout skills, the use of BEM methodology, and assembly automation using Gulp.
+VIEW LIVE DEMO
 
-[**REWIEW DEMO**](https://maximtsyrulnyk.github.io/landing_page_final_review/)
+🎯 Project Overview
+The main goal of this project was to create a modern, high-performance landing page that adheres to Pixel Perfect and Mobile First principles. It features a scalable CSS architecture and is optimized for production.
 
-## 🚀 Main characteristics
-- **Pixel Perfect**: Maximum design compliance.
-- **Adaptability**: Correct display on mobile devices, tablets and desktops (Mobile First).
-- **BEM Methodology**: Clear and scalable class structure.
-- **Optimization**: Minimized styles and scripts, optimized images (WebP).
+🚀 Key Features
+Fully Responsive: Seamlessly adapts to mobile, tablet, and desktop screens.
 
-## 🛠 Technological stack
-- **HTML5**: Semantic markup.
-- **SCSS (SASS)**: Using variables, mixins and nesting.
-- **BEM**: To organize CSS architecture.
-- **Gulp**: Build automation (SCSS compilation, minification, Browsersync).
-- **GitHub Pages**: For hosting the demo version.
+BEM Methodology: Clean and modular class naming for better maintainability.
 
-## 📦 How to run locally
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/maximtsyrulnyk/landing_page_final_review.git](https://github.com/maximtsyrulnyk/landing_page_final_review.git)
+Performance Optimized: Minified assets, optimized images (WebP/Avif), and efficient CSS.
+
+Automation: Fully configured Gulp pipeline for development and production builds.
+
+Semantic HTML: Accessible and SEO-friendly markup.
+
+🛠 Tech Stack
+HTML5: Semantic and accessible structure.
+
+Sass (SCSS): Utilizing variables, mixins, and nesting for flexible styling.
+
+BEM: For scalable and modular CSS architecture.
+
+Gulp: Automating tasks like SCSS compilation, minification, and image optimization.
+
+JavaScript (ES6): Modern logic and interactivity.
+
+GitHub Pages: For hosting the live demonstration.
+
+📂 Project Structure
+Plaintext
+src/
+├── fonts/          # Project fonts
+├── images/         # Optimized images
+├── js/
+│   └── main.js     # Main JavaScript file
+├── scss/
+│   ├── components/ # BEM blocks (header, hero, footer, etc.)
+│   ├── _global.scss# Global styles and resets
+│   └── main.scss   # Entry point for styles
+└── index.html      # Main HTML file
+💻 Getting Started
+Prerequisites
+Make sure you have Node.js installed on your machine.
+
+Installation
+Clone the repository:
+
+Bash
+git clone https://github.com/maximtsyrulnyk/landing_page_final_review.git
+Navigate to the project folder:
+
+Bash
+cd landing_page_final_review
+Install dependencies:
+
+Bash
+npm install
+Available Scripts
+Start development server:
+
+Bash
+npm start
+Compiles styles, scripts, and opens a live-reload server in your browser.
+
+Build for production:
+
+Bash
+npm run build
+Cleans the dist/ folder and generates optimized assets ready for deployment.
 
 👨‍💻 Author
 Maxim Tsyrulnyk — https://github.com/maximtsyrulnyk
-
----
-
-### 2. `index.html`
-(An example structure that matches your stack)
-
-```html
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page | Portfolio</title>
-  <link rel="stylesheet" href="css/main.min.css">
-</head>
-<body class="page">
-  <header class="header">
-    <div class="container">
-      <nav class="nav">
-        <a href="#" class="nav__logo">MyLogo</a>
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#about" class="nav__link">Про нас</a></li>
-          <li class="nav__item"><a href="#features" class="nav__link">Переваги</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Контакти</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="main">
-    <section class="hero">
-      <div class="container">
-        <h1 class="hero__title">Інноваційні рішення для вашого бізнесу</h1>
-        <button class="button button--primary">Дізнатися більше</button>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p class="footer__copy">&copy; 2026 Maxim Tsyrulnyk. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="js/main.min.js"></script>
-</body>
-</html>
