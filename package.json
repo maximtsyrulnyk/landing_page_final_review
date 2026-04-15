@@ -1,42 +1,21 @@
 {
-  "name": "gulp-boilerplate",
+  "name": "landing_page_final_review",
   "version": "1.0.0",
-  "description": "Frontend boilerplate based on gulp",
+  "description": "Final landing page project for review",
+  "main": "index.html",
   "scripts": {
-    "init": "mate-scripts init",
-    "start": "mate-scripts start",
-    "lint": "mate-scripts lint",
-    "test:only": "mate-scripts test",
-    "build": "mate-scripts build",
-    "deploy": "mate-scripts deploy",
-    "update": "mate-scripts update",
-    "postinstall": "npm run update",
-    "test": "npm run lint && npm run test:only"
+    "start": "gulp",
+    "build": "gulp build"
   },
-  "keywords": [],
-  "author": "Mate Academy",
-  "license": "GPL-3.0",
   "devDependencies": {
-    "@linthtml/linthtml": "^0.9.6",
-    "@mate-academy/eslint-config": "latest",
-    "@mate-academy/linthtml-config": "latest",
-    "@mate-academy/scripts": "^2.1.3",
-    "@mate-academy/stylelint-config": "latest",
-    "@parcel/transformer-sass": "^2.16.4",
-    "eslint": "^8.57.0",
-    "eslint-plugin-node": "^11.1.0",
-    "parcel": "^2.12.0",
-    "prettier": "^3.3.2",
-    "stylelint": "^16.7.0",
-    "stylelint-scss": "^6.4.1"
-  },
-  "browserslist": [
-    "last 2 versions"
-  ],
-  "mateAcademy": {
-    "projectType": "layout",
-    "linters": {
-      "bem": false
-    }
+    "browser-sync": "^2.27.7",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify-es": "^3.0.0",
+    "sass": "^1.49.9"
   }
 }

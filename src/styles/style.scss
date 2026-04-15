@@ -1,0 +1,55 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 20px 0;
+  background-color: $bg-color;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+
+      @media (max-width: 640px) {
+        display: none; // Спрощення для прикладу
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $text-primary;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+.hero {
+  padding: 100px 0;
+  text-align: center;
+
+  &__title {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
