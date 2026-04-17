@@ -1,56 +1,56 @@
-# Product Landing Page
+<!-- Available Scripts
+In the project directory, you can run:
 
-This is a comprehensive landing page project developed as a final review task at Mate Academy. The project focuses on high-quality markup, responsive design, and modern frontend development workflows.
+npm run start: Runs the app in development mode with live reloading.
 
-## 🔗 Live Demo
-Check out the live version here: [GitHub Pages Link](https://maximtsyrulnyk.github.io/landing_page_final_review/)
+npm run compile:sass: Compiles SCSS to CSS once.
 
-## 🛠 Technologies Used
-* **HTML5** – Semantic and accessible structure.
-* **SCSS** – Advanced styling with variables, mixins, and nested rules.
-* **BEM Methodology** – Scalable and maintainable CSS class naming.
-* **Gulp** – Task runner for automated builds (Sass compilation, image optimization, minification).
-* **JavaScript (ES6+)** – Interactive elements and DOM manipulation.
-* **Responsive Web Design** – Fully adapted for Mobile, Tablet, and Desktop (Mobile-first approach).
+npm run watch:sass: Watches SCSS files and compiles them on every change.
 
-## 🚀 Getting Started
+npm run build: Compiles and compresses the styles for production.
 
-Follow these steps to set up the project locally:
+npm run deploy: Deploys the src folder to GitHub Pages.
+
+Author: Maxim Tsyrulnyk
+
+GitHub: @maximtsyrulnyk
+
+
+---
+
+### 2. package.json
+
+```json
+{
+  "name": "layout-museum",
+  "version": "1.0.0",
+  "description": "Professional Museum landing page layout",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --server 'src' --files 'src/**/*.html, src/**/*.scss' --watch",
+    "compile:sass": "sass src/styles/main.scss src/styles/main.css",
+    "watch:sass": "sass src/styles/main.scss src/styles/main.css --watch",
+    "build": "sass src/styles/main.scss dist/css/main.css --style compressed",
+    "deploy": "gh-pages -d src"
+  },
+  "author": "Maxim Tsyrulnyk",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^3.0.0",
+    "sass": "^1.70.0",
+    "gh-pages": "^6.1.1"
+  }
+} -->
+
+# Museum Landing Page
+
+A professional landing page layout for a museum project, built with a focus on modern web standards and clean architecture.
+
+## Getting Started
+
+Follow these steps to get the project running locally:
 
 ### 1. Clone the repository
+
 ```bash
 git clone [https://github.com/maximtsyrulnyk/landing_page_final_review.git](https://github.com/maximtsyrulnyk/landing_page_final_review.git)
-
-2. Navigate to the project folder
-Bash
-cd landing_page_final_review
-3. Install dependencies
-Ensure you have Node.js installed, then run:
-
-Bash
-npm install
-4. Run the development server
-To start the local server with live reloading (via BrowserSync):
-
-Bash
-npm start
-The project will be available at http://localhost:3000.
-
-5. Build for production
-To generate an optimized version of the project in the dist/ folder:
-
-Bash
-npm run build
-📁 Project Structure
-src/ — Source files (SCSS, JS, unoptimized images).
-
-dist/ — Final production-ready build.
-
-gulpfile.js — Gulp automation configurations.
-
-🎨 Design
-The project is built strictly according to the Figma layout, ensuring pixel-perfect accuracy for all interactive states (hover, focus, active).
-
-👨‍💻 Author
-Maxim Tsyrulnyk — Full-stack Student at Mate Academy.
-
